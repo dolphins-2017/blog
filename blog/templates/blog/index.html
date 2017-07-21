@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<center>Hi, {{request.user}}</center><a href="/users/logout">logout</a>
+<a href="/blog/create">New Post</a><br>
+{% for post in posts %}
+	<p>
+	<h2>{{post.title}}</h2>
+	{{post.comment}}
+	</p>
+{% endfor %}
+
+</body>
+</html>

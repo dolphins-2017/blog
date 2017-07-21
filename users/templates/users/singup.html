@@ -1,0 +1,7 @@
+<html>
+<form action="/users/singup" method="POST">
+	{% csrf_token %}
+	{{creationForm.as_p}}
+	<input type="submit"/>
+</form>
+</html>
